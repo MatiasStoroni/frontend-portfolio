@@ -1,0 +1,20 @@
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../../../assets/images/arglogo.png" alt="..." margin="0" padding="0" height="75" width="130">
+        </a>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/MatiasStoroni"><i class="fab fa-fw fa-github"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/mat%C3%ADas-storoni-3a4108246/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="/iniciar-sesion" *ngIf="!isLogged"><img src="../../../assets/images/login.png" height="32"></a>
+                <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Log Out</button>
+            </ul>
+        </div>
+    </div>
+</nav>

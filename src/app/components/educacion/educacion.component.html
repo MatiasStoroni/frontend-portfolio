@@ -1,0 +1,30 @@
+<!-- Portfolio Section-->
+<section class="page-section bg-white portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Educacion</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center">
+            <!-- Portfolio Item 1-->
+            <div class="text-center col-md-6 col-lg-3 mb-5" *ngFor="let e of educaciones">
+                <div class="card bg-primary" style="width: 18rem;">
+                    <img class="card-img-top bg-white" src="assets/images/proximamente.png">
+                    <div class="card-body bg-secondary">
+                        <p class="card-text text-white">{{e.descripcion}}</p>
+                        <div class="editar-portfolio" *ngIf="isLogged">
+                            <button type="button" class="btn btn-info" routerLink="/new-educacion"><i class="fa-solid fa-plus"></i></button>
+                            <button type="button" class="btn btn-warning m-6" routerLink="/edit-educacion"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fa-sharp fa-solid fa-trash"></i></button> 
+                        </div>
+                    </div>
+                </div>
+            </div>             
+        </div>
+    </div>  
+</section>
