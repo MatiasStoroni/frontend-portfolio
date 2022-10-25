@@ -9,22 +9,26 @@
             <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
             <div class="divider-custom-line"></div>
         </div>
+        <button *ngIf="isLogged" type="button" class="btn btn-info" routerLink="/new-educacion"><i
+                class="fa-solid fa-plus"></i>Crear nuevo</button>
         <!-- Portfolio Grid Items-->
         <div class="row justify-content-center">
             <!-- Portfolio Item 1-->
             <div class="text-center col-md-6 col-lg-3 mb-5" *ngFor="let e of educaciones">
-                <div class="card bg-primary" style="width: 18rem;">
-                    <img class="card-img-top bg-white" src="assets/images/proximamente.png">
+                <div class="card bg-primary">
+                    <img class="card-img-top bg-white" width="200em" height="200em" style="border-radius: 10px;" src="https://firebasestorage.googleapis.com/v0/b/web-portfolio-matias-storoni.appspot.com/o/images%2F{{e.imagen}}?alt=media" alt="Logo de institucion">
                     <div class="card-body bg-secondary">
-                        <p class="card-text text-white">{{e.descripcion}}</p>
+                        <h6 style="color:coral">{{e.titulo}}</h6>
+                        <h6 style="color:rgb(207, 198, 194)">{{e.descripcion}}</h6>
                         <div class="editar-portfolio" *ngIf="isLogged">
-                            <button type="button" class="btn btn-info" routerLink="/new-educacion"><i class="fa-solid fa-plus"></i></button>
-                            <button type="button" class="btn btn-warning m-6" routerLink="/edit-educacion"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button type="button" class="btn btn-danger"><i class="fa-sharp fa-solid fa-trash"></i></button> 
+                            <button type="button" class="btn btn-warning m-6" routerLink="/edit-educacion" (click)="guardarActual(e)"><i
+                                    class="fa-solid fa-pen-to-square"></i></button>
+                            <button type="button" class="btn btn-danger" (click)="borrar(e.id)"><i
+                                    class="fa-sharp fa-solid fa-trash"></i></button>
                         </div>
                     </div>
                 </div>
-            </div>             
+            </div>
         </div>
-    </div>  
+    </div>
 </section>

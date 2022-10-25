@@ -1,24 +1,28 @@
 <!-- Portfolio Section-->
 <section class="page-section bg-primary portfolio" id="portfolio">
-    <div class="container">
-        <!-- Portfolio Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Skills</h2>
-        <!-- Icon Divider-->
-        <div class="divider-custom divider-light">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-            <div class="divider-custom-line"></div>
-        </div>
-        <!-- Portfolio Grid Items-->
-        <div class="dashboard justify-content-center">
-            <svg class="circulo">
-              <circle class="bg" cx="57" cy="57" r="52" />
-              <circle class="meter-1" cx="57" cy="57" r="52" />
-            </svg>
-            <svg class="circulo">
-              <circle class="bg" cx="57" cy="57" r="52" />
-              <circle class="meter-2" cx="57" cy="57" r="52" />
-            </svg>
-          </div>
-    </div>  
+  <div class="container">
+    <!-- Portfolio Section Heading-->
+    <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Skills</h2>
+    <!-- Icon Divider-->
+    <div class="divider-custom divider-light">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+      <div class="divider-custom-line"></div>
+    </div>
+    <button *ngIf="isLogged" type="button" class="btn btn-info" routerLink="/new-skill"><i
+        class="fa-solid fa-plus"></i>Crear nuevo</button>
+    <!-- Portfolio Grid Items-->
+    <div class="dashboard justify-content-center">
+      <div class="col-md-6 col-lg-3 mb-0" *ngFor="let s of skills">
+        <h4 class="m-0">{{s.titulo}}</h4>
+        <label for="progreso">{{s.progreso}}%</label>
+        <progress id="progreso" value="{{s.progreso}}" max="100">
+        </progress>
+        <button type="button" *ngIf="isLogged" class="btn btn-warning m-6" routerLink="/edit-skill" (click)="guardarActual(s)"><i
+            class="fa-solid fa-pen-to-square"></i></button>
+        <button type="button" *ngIf="isLogged" class="btn btn-danger" (click)="borrar(s.id)"><i
+            class="fa-sharp fa-solid fa-trash"></i></button>
+      </div>
+    </div>
+  </div>
 </section>

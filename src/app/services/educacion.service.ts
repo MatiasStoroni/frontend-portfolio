@@ -23,7 +23,7 @@ export class EducacionService {
   }
 
   public update(educacion: Educacion, id:number): Observable<any> {
-    return this.httpClient.put<any>(this.educacionURL + 'modificar/' + id, educacion);
+    return this.httpClient.post<any>(this.educacionURL + 'modificar/' + id, educacion);
   }
 
   public delete(id: number): Observable<any> {

@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="onUpdate()" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="titulo"><strong>Nombre de la habilidad:</strong></label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="titulo">
+                </div>
+                <br />
+
+                <div class="form-group">
+                    <label for="progreso"><strong>Porcentaje de progreso en la habilidad:</strong></label>
+                    <input type="number" min="0" max="100" class="form-control" id="progreso" name="progreso" [(ngModel)]="progreso">
+                </div>
+                <br />
+                <div class="botones mt-3">
+                    <button class="btn btn-outline-success btn-block">
+                        <i class="fas fa-pencil-alt"></i> Actualizar</button>
+                    <button class="btn btn-outline-primary btn-block mx-5" (click)=goBack()>
+                        <i class="fas fa-arrow-alt-circle-left"></i> Volver</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

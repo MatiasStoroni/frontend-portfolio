@@ -10,18 +10,16 @@ const TOKEN_KEY = 'AuthToken';
 export class TokenService {
 
   roles: Array<string> = [];
+  
+  constructor() { }
 
-  constructor(
-    private router: Router
-  ) { }
-
-  public setToken(token: string): void {
+  public setToken(token: string): void{
     window.localStorage.removeItem(TOKEN_KEY);
-    window.localStorage.setItem(TOKEN_KEY, token);
+    window.localStorage.setItem(TOKEN_KEY,token);
   }
 
-  public getToken(): string {
-    return localStorage.getItem(TOKEN_KEY);
+  public getToken(): string{
+    return localStorage.getItem(TOKEN_KEY)!;
   }
 
   public isLogged(): boolean {
@@ -30,10 +28,10 @@ export class TokenService {
     }
     return false;
   }
-
+  
   public getUserName(): string {
     if (!this.isLogged()) {
-      return null;
+      return ' ';
     }
     const token = this.getToken();
     const payload = token.split('.')[1];
@@ -41,7 +39,7 @@ export class TokenService {
     const values = JSON.parse(payloadDecoded);
     const username = values.sub;
     return username;
-  }
+  } 
 
   public isAdmin(): boolean {
     if (!this.isLogged()) {
@@ -58,8 +56,7 @@ export class TokenService {
     return true;
   }
 
-  public logOut(): void {
+  public logOut():void {
     window.localStorage.clear();
-    this.router.navigate(['/login']);
   }
 }

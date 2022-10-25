@@ -7,8 +7,8 @@ export class Educacion {
 
     constructor(titulo: string, link: string, imagen: string, descripcion: string){
         this.titulo = titulo;
-        this.link = titulo;
-        this.imagen = titulo;
-        this.descripcion = titulo;
+        this.link = link;
+        this.imagen = imagen;
+        this.descripcion = descripcion;
     }
 }

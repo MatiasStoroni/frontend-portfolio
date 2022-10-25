@@ -58,4 +58,13 @@ export class EducacionComponent implements OnInit {
     }
   }
 
+  guardarActual(e: Educacion):void{
+    window.localStorage.setItem("idActual", e.id.toString());
+    window.localStorage.setItem("tituloActual", e.titulo);
+    window.localStorage.setItem("linkActual", e.link);
+    window.localStorage.setItem("imagenActual", e.imagen);
+    window.localStorage.setItem("descripcionActual", e.descripcion);
+  }
+
+  
 }

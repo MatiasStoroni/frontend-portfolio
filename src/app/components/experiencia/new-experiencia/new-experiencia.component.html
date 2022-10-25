@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-descripcion mx-auto">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="titulo"><strong>Nombre de la empresa:</strong></label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="titulo" required>
+                </div>
+                <br/>
+                
+                <div class="form-group">
+                    <label for="imagen"><strong>Seleccione la imagen de la empresa...</strong></label>
+                    <br/>
+                    <input type="file" class="text-nowrap text-truncate" (change)="selectFile($event)" />
+                </div>
+                <br/>
+
+                
+                <div class="form-group">
+                    <label for="descripcion" ><strong>Breve descripción del puesto: </strong></label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion"
+                    [(ngModel)]="descripcion" required>
+                </div>
+                <br/>
+                
+                <button class="btn btn-outline-success btn-block" [disabled]="!f.valid" (click)="upload()">
+                    <i class="fas fa-plus-circle"></i> Crear</button>
+                <button class="btn btn-outline-primary btn-block" routerLink="/portfolio">
+                    <i class="fas fa-arrow-alt-circle-left"></i> Volver</button>
+            </form>
+        </div>
+    </div>
+</div>

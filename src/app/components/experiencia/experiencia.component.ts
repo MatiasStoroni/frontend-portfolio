@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { Experiencia } from 'src/app/models/experiencia';
-import { EducacionService } from 'src/app/services/educacion.service';
 import { ExperienciaService } from 'src/app/services/experiencia.service';
 import { TokenService } from 'src/app/services/token.service';
 
@@ -13,11 +12,13 @@ import { TokenService } from 'src/app/services/token.service';
 export class ExperienciaComponent implements OnInit {
 
   experiencias: Experiencia[] = [];
+  isLogged = false;
 
-  constructor(private experienciaService: ExperienciaService, 
+  constructor(
+    private experienciaService: ExperienciaService, 
     private toastr: ToastrService, 
-    private tokenService: TokenService) { }
-    isLogged = false;
+    private tokenService: TokenService
+  ) { }
 
   ngOnInit() {
     this.cargarExperiencias();
@@ -39,9 +40,9 @@ export class ExperienciaComponent implements OnInit {
     );
   }
 
-  borrar(id_exp: number) {
+  borrar(id_edu: number) {
     if(confirm("¿Estás seguro que deseas eliminar esta información?")){
-      this.experienciaService.delete(id_exp).subscribe(
+      this.experienciaService.delete(id_edu).subscribe(
         data => {
           this.toastr.success('Experiencia Eliminada', 'OK', {
             timeOut: 3000, positionClass: 'toast-top-center'
@@ -56,5 +57,13 @@ export class ExperienciaComponent implements OnInit {
       );
     }
   }
+
+  guardarActual(e: Experiencia):void{
+    window.localStorage.setItem("idActual", e.id.toString());
+    window.localStorage.setItem("tituloActual", e.titulo);
+    window.localStorage.setItem("imagenActual", e.imagen);
+    window.localStorage.setItem("descripcionActual", e.descripcion);
+  }
+
 
 }

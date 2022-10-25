@@ -6,7 +6,7 @@ export class Experiencia {
 
     constructor(titulo: string, imagen: string, descripcion: string){
         this.titulo = titulo;
-        this.imagen = titulo;
-        this.descripcion = titulo;
+        this.imagen = imagen;
+        this.descripcion = descripcion;
     }
 }

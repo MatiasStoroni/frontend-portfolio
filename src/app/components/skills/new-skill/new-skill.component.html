@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-descripcion mx-auto">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="titulo"><strong>Nombre de la habilidad:</strong></label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="titulo" required>
+                </div>
+                <br/>
+
+                
+                <div class="form-group">
+                    <label for="progreso" ><strong>Porcentaje de progreso en la habilidad: (0-100)</strong></label>
+                    <input type="number" min="0" max="100" class="form-control" id="progreso" name="progreso"
+                    [(ngModel)]="progreso" required>
+                </div>
+                <br/>
+                
+                <button class="btn btn-outline-success btn-block" [disabled]="!f.valid">
+                    <i class="fas fa-plus-circle"></i> Crear</button>
+                <button class="btn btn-outline-primary btn-block" routerLink="/portfolio">
+                    <i class="fas fa-arrow-alt-circle-left"></i> Volver</button>
+            </form>
+        </div>
+    </div>
+</div>
