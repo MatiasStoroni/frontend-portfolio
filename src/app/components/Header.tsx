@@ -19,30 +19,33 @@ export default function Header() {
     };
 
     return (
-        <div className="bg-slate-800 p-4 max-h-[10vh] relative z-20">
+        <div className="bg-slate-800 p-4 max-h-[10vh]">
             <div className="flex items-center justify-between">
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex space-x-4 text-white text-lg">
-                    <li className="p-1 rounded-md hover:bg-green-300 hover:text-black">
-                        <Link href="#">Inicio</Link>
+                    <li className="p-1 rounded-md hover:text-orange-600 duration-300">
+                        <Link href="#">Home</Link>
                     </li>
-                    <li className="p-1 rounded-md hover:bg-green-300 hover:text-black">
-                        <Link href="#experiencia">Experiencia</Link>
+                    <li className="p-1 rounded-md hover:text-orange-600 duration-300">
+                        <Link href="#about">About</Link>
                     </li>
-                    <li className="p-1 rounded-md hover:bg-green-300 hover:text-black">
-                        <Link href="#educacion">Educación</Link>
+                    <li className="p-1 rounded-md hover:text-orange-600 duration-300">
+                        <Link href="#experiencia">Experience</Link>
                     </li>
-                    <li className="p-1 rounded-md hover:bg-green-300 hover:text-black">
-                        <Link href="#proyectos">Proyectos</Link>
+                    <li className="p-1 rounded-md hover:text-orange-600 duration-300">
+                        <Link href="#educacion">Education</Link>
                     </li>
-                    <li className="p-1 rounded-md hover:bg-green-300 hover:text-black">
-                        <Link href="#contacto">Contacto</Link>
+                    <li className="p-1 rounded-md hover:text-orange-600 duration-300">
+                        <Link href="#proyectos">Projects</Link>
+                    </li>
+                    <li className="p-1 rounded-md hover:text-orange-600 duration-300">
+                        <Link href="#contacto">Contact</Link>
                     </li>
                 </ul>
                 {/* Hamburger Button (right side) */}
                 <button
                     onClick={() => setOpen(true)}
-                    className="md:hidden p-2 rounded-md bg-gray-700 hover:bg-green-300 text-white hover:text-black hover:cursor-pointer ml-auto"
+                    className="md:hidden p-2 rounded-md bg-gray-700 hover:bg-green-300 hover:text-black duration-200 text-white hover:cursor-pointer ml-auto"
                 >
                     <Bars3Icon className="h-6 w-6" />
                 </button>
@@ -68,27 +71,27 @@ export default function Header() {
                         </div>
                         <li onClick={handleClose} className="p-2 rounded-md hover:bg-green-300 hover:text-black hover:cursor-pointer">
                             <Link href="#">
-                                Inicio
+                                Home
                             </Link>
                         </li>
                         <li onClick={handleClose} className="p-2 rounded-md hover:bg-green-300 hover:text-black hover:cursor-pointer">
                             <Link href="#experiencia">
-                                Experiencia
+                                Experience
                             </Link>
                         </li>
                         <li onClick={handleClose} className="p-2 rounded-md hover:bg-green-300 hover:text-black hover:cursor-pointer">
                             <Link href="#educacion">
-                                Educacion
+                                Education
                             </Link>
                         </li>
                         <li onClick={handleClose} className="p-2 rounded-md hover:bg-green-300 hover:text-black hover:cursor-pointer">
                             <Link href="#proyectos">
-                                Proyectos
+                                Projects
                             </Link>
                         </li>
                         <li className="p-2 rounded-md hover:bg-green-300 hover:text-black hover:cursor-pointer">
                             <Link href="#contacto">
-                                Contacto
+                                Contact
                             </Link>
                         </li>
                     </ul>
