@@ -19,7 +19,7 @@ export default function About() {
 
                 {/* Right: Text Content */}
                 <div className="w-full md:w-1/2 space-y-6">
-                    <h2 className="text-3xl font-bold text-indigo-400">About Me</h2>
+                    <h2 className="text-3xl font-bold text-orange-700">About Me</h2>
                     <p className="text-lg leading-relaxed text-slate-200">
                         My name is Matias, I am an Information Systems Engineer with a strong background in analysis, design, and development of web
                         applications, complemented by knowledge in network administration, cybersecurity, and software projects management.
@@ -28,7 +28,7 @@ export default function About() {
                         I am passionate about applying technology in practical ways to solve real-world problems, and I am committed to continuous
                         learning—constantly researching and training in new tools to stay up-to-date in a rapidly evolving environment.
                     </p>
-                    <button className="mt-4 border-1 border-orange-800 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-xl shadow transition">
+                    <button className="mt-4 border-1 border-orange-800 hover:bg-orange-800 text-white font-semibold py-2 px-4 rounded-xl shadow transition">
                         Download Resume
                     </button>
                 </div>

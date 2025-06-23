@@ -28,7 +28,7 @@ export default function Presentation() {
                     Matias Storoni
                 </h1>
                 <h2 className="mt-2 text-base sm:text-lg md:text-xl font-medium text-white/80 drop-shadow">
-                    Ingeniero en Sistemas de Información – Desarrollador Full Stack Jr.
+                        Information Systems Engineer – Full Stack Developer Jr.
                 </h2>
             </div>
         </div>
