@@ -1,6 +1,7 @@
 /** @format */
 
 import About from "./components/About";
+import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Presentation from "./components/Presentation";
@@ -16,6 +17,7 @@ export default function Home() {
                <Presentation/>
                <About/>
                <Experience/>
+               <Education/>
             </div>
         </main>
     );
