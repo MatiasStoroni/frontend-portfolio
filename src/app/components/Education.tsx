@@ -2,11 +2,20 @@
 
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
+import { PiCertificateLight } from "react-icons/pi";
 const education = [
     {
         title: "Bachelor's Degree in Information Systems",
         year: "2019 - 2024",
         description: "Studied software development, project management, networking, and cybersecurity.",
+        resources: [
+            {
+                type: "repository",
+                label: "View GitHub Repository",
+                url: "https://github.com/MatiasStoroni/Benkynote",
+                icon: FaGithub
+            },
+        ],
         project: {
             title: "🎓 Final Thesis: Academic Assistance Platform",
             summary:
@@ -19,6 +28,14 @@ const education = [
         year: "2022",
         description:
             "Intensive government-backed course covering frontend (Angular), backend (Spring Boot), databases (MySQL), and deployment (Firebase, Heroku).",
+        resources: [
+            {
+                type: "certificate",
+                label: "View Certificate",
+                url: "/certificates/yo-programo.pdf",
+                icon: PiCertificateLight,
+            },
+        ],
     },
 ];
 
@@ -40,6 +57,7 @@ export default function Education() {
                                     <h3 className="text-lg font-semibold text-white">{item.title}</h3>
                                     <p className="text-sm text-slate-300 leading-relaxed mt-2">{item.description}</p>
 
+                                    {/* Project details */}
                                     {item.project && (
                                         <div className="mt-4 text-sm text-slate-300">
                                             <p className="font-semibold text-slate-100">{item.project.title}</p>
@@ -53,13 +71,23 @@ export default function Education() {
                                                     </span>
                                                 ))}
                                             </div>
+                                        </div>
+                                    )}
 
-                                            {/* Optional link */}
-                                            <div className="mt-3">
-                                                <Link href="" className="text-orange-600 hover:text-teal-300 hover:cursor-pointer text-md underline underline-offset-2 flex gap-2 items-center">
-                                                    <FaGithub/>View project details
+                                    {/* Optional resources (repo or cert) */}
+                                    {item.resources && (
+                                        <div className="mt-4 flex flex-wrap gap-4">
+                                            {item.resources.map((res, i) => (
+                                                <Link
+                                                    key={i}
+                                                    href={res.url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-orange-600 hover:text-orange-400 underline underline-offset-2 text-sm flex items-center gap-1"
+                                                >
+                                                    {res.icon && <res.icon className="w-5 h-5 text-white" />}{res.label}
                                                 </Link>
-                                            </div>
+                                            ))}
                                         </div>
                                     )}
                                 </div>
