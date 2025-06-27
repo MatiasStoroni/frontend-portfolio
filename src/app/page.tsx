@@ -5,6 +5,7 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Presentation from "./components/Presentation";
+import Projects from "./components/Projects";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
                <About/>
                <Experience/>
                <Education/>
+               <Projects/>
             </div>
         </main>
     );
