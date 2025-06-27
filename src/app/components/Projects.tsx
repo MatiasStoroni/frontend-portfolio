@@ -35,9 +35,9 @@ const projects = [
     },
 ];
 
-export default function Experience() {
+export default function Projects() {
     return (
-        <section className="bg-slate-800 text-white py-16 px-6 md:px-20">
+        <section id="projects" className="scroll-mt-[10vh] bg-slate-800 text-white py-16 px-6 md:px-20">
             <div className="max-w-6xl mx-auto items-center">
                 <div className="w-full space-y-6">
                     <h2 className="text-3xl text-center font-bold text-orange-700">Projects</h2>

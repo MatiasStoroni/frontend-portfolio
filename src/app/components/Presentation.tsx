@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Presentation() {
     return (
-        <div
-            className="w-full min-h-[90vh] flex items-center justify-center bg-cover bg-center relative px-4"
+        <div id="presentation"
+            className="scroll-mt-[10vh] w-full min-h-[90vh] flex items-center justify-center bg-cover bg-center relative px-4"
             style={{
                 backgroundImage: "url(/images/presentation-bg.jpg)",
             }}

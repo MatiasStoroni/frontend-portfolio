@@ -29,3 +29,9 @@ body {
         transform: translateX(100%);
     }
 }
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
