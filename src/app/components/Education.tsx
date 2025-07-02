@@ -6,14 +6,14 @@ import { PiCertificateLight } from "react-icons/pi";
 const education = [
     {
         title: "Bachelor's Degree in Information Systems",
-        year: "2019 - 2024",
+        year: "2025",
         description: "Studied software development, project management, networking, and cybersecurity.",
         resources: [
             {
                 type: "repository",
                 label: "View GitHub Repository",
                 url: "https://github.com/MatiasStoroni/Benkynote",
-                icon: FaGithub
+                icon: FaGithub,
             },
         ],
         project: {
@@ -33,6 +33,34 @@ const education = [
                 type: "certificate",
                 label: "View Certificate",
                 url: "/certificates/yo-programo.pdf",
+                icon: PiCertificateLight,
+            },
+        ],
+    },
+    {
+        title: "Cybersecurity Essentials - Cisco Networking Academy",
+        year: "2025",
+        description:
+            "Comprehensive intermediate-level course offered by Cisco Networking Academy, designed to build a strong foundation in cybersecurity principles and practices. The curriculum covers a wide range of topics including cryptography, network and endpoint security, access control models, firewalls, VPNs, and security policies. It places strong emphasis on hands-on learning through interactive labs and real-world scenarios using Cisco Packet Tracer and virtual environments. Learners gain experience in threat analysis, secure system design, and risk mitigation strategies. This course also prepares students for further certification paths such as CompTIA Security+ and CCST Cybersecurity.",
+        resources: [
+            {
+                type: "certificate",
+                label: "View Certificate",
+                url: "https://www.credly.com/badges/92ddc5d4-40ec-4c9d-b078-108f5948202a/public_url",
+                icon: PiCertificateLight,
+            },
+        ],
+    },
+    {
+        title: "Introduction to Cybersecurity - Cisco Networking Academy",
+        year: "2025",
+        description:
+            "Comprehensive foundational course exploring core cybersecurity concepts, including threat landscape, attack types, cryptography, and principles of network and data protection. Offered by Cisco Networking Academy, this program also covers risk management, security policies, and career pathways in cybersecurity. Ideal for beginners aiming to understand how to protect digital assets in a connected world.",
+        resources: [
+            {
+                type: "certificate",
+                label: "View Certificate",
+                url: "https://www.credly.com/badges/22c6a16a-7dba-41e4-bb88-77d62ac10f13/public_url",
                 icon: PiCertificateLight,
             },
         ],
@@ -85,7 +113,8 @@ export default function Education() {
                                                     rel="noopener noreferrer"
                                                     className="text-orange-600 hover:text-orange-400 underline underline-offset-2 text-sm flex items-center gap-1"
                                                 >
-                                                    {res.icon && <res.icon className="w-5 h-5 text-white" />}{res.label}
+                                                    {res.icon && <res.icon className="w-5 h-5 text-white" />}
+                                                    {res.label}
                                                 </Link>
                                             ))}
                                         </div>
