@@ -28,9 +28,13 @@ export default function About() {
                         I am passionate about applying technology in practical ways to solve real-world problems, and I am committed to continuous
                         learning—constantly researching and training in new tools to stay up-to-date in a rapidly evolving environment.
                     </p>
-                    <button className="mt-4 border-1 border-orange-800 hover:bg-orange-800 text-white font-semibold py-2 px-4 rounded-xl shadow transition">
+                    <a
+                        href="/documents/MatiasStoroni_Resume.pdf"
+                        download
+                        className="inline-block mt-4 border-1 border-orange-800 hover:bg-orange-800 text-white font-semibold py-2 px-4 rounded-xl shadow transition"
+                    >
                         Download Resume
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
