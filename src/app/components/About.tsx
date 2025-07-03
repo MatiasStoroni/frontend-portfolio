@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <section id="about" className="scroll-mt-[10vh] bg-slate-900 text-white py-16 px-6 md:px-20">
+        <section id="about" className="scroll-mt-16 bg-slate-900 text-white py-16 px-6 md:px-20">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
                 {/* Left: Profile Picture */}
                 <div className="w-full md:w-1/2 flex justify-center">

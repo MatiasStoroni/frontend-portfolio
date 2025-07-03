@@ -69,7 +69,7 @@ const education = [
 
 export default function Education() {
     return (
-        <section id="education" className="scroll-mt-[10vh] bg-slate-900 text-white py-16 px-4 sm:px-8 md:px-12">
+        <section id="education" className="scroll-mt-16 bg-slate-900 text-white py-16 px-4 sm:px-8 md:px-12">
             <div className="max-w-screen-md mx-auto">
                 <h2 className="text-3xl text-center font-bold text-orange-700">Education</h2>
 

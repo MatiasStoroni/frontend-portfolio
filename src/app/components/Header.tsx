@@ -29,7 +29,7 @@ export default function Header() {
     };
 
     return (
-        <div className="bg-slate-800 p-4 min-h-[10vh]">
+        <div className="bg-slate-800 p-4 h-16">
             <div className="flex items-center justify-between">
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex space-x-4 text-white text-lg">
@@ -50,7 +50,11 @@ export default function Header() {
             {/* Overlay and Mobile Menu */}
             {open && (
                 <>
-                    <div className="fixed inset-0 bg-black/50 z-30" onClick={handleClose} aria-label="Close menu overlay" />
+                    <div
+                        className="fixed inset-0 bg-black/50 z-30"
+                        onClick={() => handleClose("/")}
+                        aria-label="Close menu overlay"
+                    />
                     <ul
                         className={`fixed top-0 right-0 w-1/3 max-w-xs h-full bg-slate-800 z-40 flex flex-col space-y-2 text-white text-lg p-6 shadow-lg
                         ${animateOut ? "animate-slide-out" : "animate-slide-in"}`}
