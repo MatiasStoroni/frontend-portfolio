@@ -3,21 +3,31 @@
 import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-const projects = [
+type Project = {
+    title: string;
+    description: string;
+    tech: string[];
+    image: string;
+    repo?: string;
+    demo?: string | null;
+};
+
+const projects: Project[] = [
     {
         title: "BenkyNote – Academic Platform",
         description: "AI-powered platform to help students plan and automate tasks like transcription and exam simulation.",
         tech: ["Next.js", "Java", "MySQL", "Auth0", "Docker", "Python", "Git"],
         image: "/images/benkynote.png",
         repo: "https://github.com/MatiasStoroni/Benkynote",
-        demo: "https://benkynote.vercel.app",
+        demo: null,
     },
     {
         title: "Portfolio Website",
-        description: "Personal portfolio built with Next.js and TailwindCSS, featuring dark mode and project showcase.",
+        description: "Personal portfolio developed with Next.js and Tailwind CSS, featuring responsive design and smooth section-based navigation. It showcases key projects, education, and experience using a clean UI and reusable components—highlighting both technical proficiency and attention to user experience.",
         tech: ["Next.js", "Tailwind", "React", "Git"],
-        image: "https://picsum.photos/500/300?random=2",
+        image: "/images/portfolio.png",
         repo: "https://github.com/MatiasStoroni/portfolio",
+        demo: null,
     },
 ];
 
