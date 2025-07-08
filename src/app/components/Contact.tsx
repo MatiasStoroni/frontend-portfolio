@@ -15,7 +15,7 @@ export default function Contact() {
         e.preventDefault();
 
         emailjs
-            .send(process.env.EMAILJS_SERVICE_ID!, process.env.EMAILJS_TEMPLATE_ID!, form, process.env.EMAILJS_PUBLIC_KEY!)
+            .send(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, form, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!)
             .then(() => {
                 setEmailSent(true);
                 setForm({ name: "", email: "", message: "" });
