@@ -24,20 +24,6 @@ const education = [
         },
     },
     {
-        title: "Full Stack Developer Course – #YoProgramo",
-        year: "2022",
-        description:
-            "Intensive government-backed course covering frontend (Angular), backend (Spring Boot), databases (MySQL), and deployment (Firebase, Heroku).",
-        resources: [
-            {
-                type: "certificate",
-                label: "View Certificate",
-                url: "/certificates/yo-programo.pdf",
-                icon: PiCertificateLight,
-            },
-        ],
-    },
-    {
         title: "Cybersecurity Essentials - Cisco Networking Academy",
         year: "2025",
         description:
@@ -61,6 +47,20 @@ const education = [
                 type: "certificate",
                 label: "View Certificate",
                 url: "https://www.credly.com/badges/22c6a16a-7dba-41e4-bb88-77d62ac10f13/public_url",
+                icon: PiCertificateLight,
+            },
+        ],
+    },
+    {
+        title: "Full Stack Developer Course – #YoProgramo",
+        year: "2022",
+        description:
+            "Intensive government-backed course covering frontend (Angular), backend (Spring Boot), databases (MySQL), and deployment (Firebase, Heroku).",
+        resources: [
+            {
+                type: "certificate",
+                label: "View Certificate",
+                url: "https://drive.google.com/file/d/182tF3LZYyrkjjUZvbhaWxmtb815YN7KU/view?usp=sharing",
                 icon: PiCertificateLight,
             },
         ],

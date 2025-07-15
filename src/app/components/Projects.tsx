@@ -26,7 +26,7 @@ const projects: Project[] = [
         description: "Personal portfolio developed with Next.js and Tailwind CSS, featuring responsive design and smooth section-based navigation. It showcases key projects, education, and experience using a clean UI and reusable components—highlighting both technical proficiency and attention to user experience.",
         tech: ["Next.js", "Tailwind", "React", "Git"],
         image: "/images/portfolio.png",
-        repo: "https://github.com/MatiasStoroni/portfolio",
+        repo: "https://github.com/MatiasStoroni/frontend-portfolio-next",
         demo: null,
     },
 ];
