@@ -25,6 +25,7 @@ export default function Header() {
             setOpen(false);
             setAnimateOut(false);
         }, 200);
+        if(href === "current") return; // If "current", just close without redirecting
         router.push(href);
     };
 
@@ -52,7 +53,7 @@ export default function Header() {
                 <>
                     <div
                         className="fixed inset-0 bg-black/50 z-30"
-                        onClick={() => handleClose("/")}
+                        onClick={() => handleClose("current")}
                         aria-label="Close menu overlay"
                     />
                     <ul
@@ -62,7 +63,7 @@ export default function Header() {
                         <div className="flex items-center justify-between border-b border-white text-xl pb-2 mb-4">
                             <p>Menu</p>
                             <XMarkIcon
-                                onClick={() => handleClose("/")}
+                                onClick={() => handleClose("current")}
                                 className="h-6 w-6 hover:bg-amber-50 hover:cursor-pointer hover:text-black rounded-md"
                             />
                         </div>
