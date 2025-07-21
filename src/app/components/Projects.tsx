@@ -1,6 +1,7 @@
 /** @format */
 
 import Image from "next/image";
+import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 type Project = {
@@ -65,24 +66,24 @@ export default function Projects() {
                                 {/* Links */}
                                 <div className="mt-4 flex gap-4 text-sm">
                                     {project.repo && (
-                                        <a
+                                        <Link
                                             href={project.repo}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-1 text-orange-500 hover:text-orange-300 transition-colors"
                                         >
                                             <FaGithub /> GitHub
-                                        </a>
+                                        </Link>
                                     )}
                                     {project.demo && (
-                                        <a
+                                        <Link
                                             href={project.demo}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-1 text-orange-500 hover:text-orange-300 transition-colors"
                                         >
                                             <FaExternalLinkAlt /> Live Demo
-                                        </a>
+                                        </Link>
                                     )}
                                 </div>
                             </div>

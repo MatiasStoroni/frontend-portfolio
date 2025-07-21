@@ -102,7 +102,7 @@ export default function Education() {
                                         </div>
                                     )}
 
-                                    {/* Optional resources (repo or cert) */}
+                                    {/* Optional resources */}
                                     {item.resources && (
                                         <div className="mt-4 flex flex-wrap gap-4">
                                             {item.resources.map((res, i) => (

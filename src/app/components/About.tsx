@@ -9,7 +9,7 @@ export default function About() {
                 {/* Left: Profile Picture */}
                 <div className="w-full md:w-1/2 flex justify-center">
                     <Image
-                        src="/images/profile.jpeg" // <-- replace with your image path
+                        src="/images/profile.jpeg"
                         alt="Profile"
                         width={400}
                         height={400}
