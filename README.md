@@ -6,7 +6,7 @@
 
 A modern, responsive personal portfolio showcasing projects, education, and experience. Built using **Next.js**, **TailwindCSS**, and modern web practices.
 
-Live demo: ![matias-storoni](https://matias-storoni.vercel.app)
+Live demo: [matias-storoni](https://matias-storoni.vercel.app)
 
 ![Portfolio Screenshot](public/images/screenshot.png)
 
