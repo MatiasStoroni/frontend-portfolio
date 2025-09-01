@@ -1,12 +1,9 @@
 # Matías Storoni – Portfolio
 
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://matiasstoroni.vercel.app)
-[![Next.js](https://img.shields.io/badge/Built%20With-Next.js-blue)](https://nextjs.org/)
-[![TailwindCSS](https://img.shields.io/badge/Styled%20With-TailwindCSS-38bdf8)](https://tailwindcss.com/)
-
 A modern, responsive personal portfolio showcasing projects, education, and experience. Built using **Next.js**, **TailwindCSS**, and modern web practices.
 
 ### Live demo: [matias-storoni](https://matias-storoni.vercel.app)
+### Backend repository: https://github.com/MatiasStoroni/backend-portfolio
 
 ![Portfolio Screenshot](public/images/screenshot.png)
 
