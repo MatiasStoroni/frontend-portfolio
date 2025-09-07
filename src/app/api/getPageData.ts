@@ -1,4 +1,4 @@
-const BASE_URL = process.env.BACKEND_URL
+const BASE_URL = process.env.BACKEND_URL!
 
 async function getUsers() {
     try {
