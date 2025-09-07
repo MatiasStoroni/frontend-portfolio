@@ -22,6 +22,9 @@ function DynamicSectionLoading({ retryCount }: { retryCount: number }) {
                     <p className="text-slate-400 animate-pulse">
                         Starting service... (Retries: {retryCount}/5)
                     </p>
+                    <p className="text-slate-400 animate-pulse">
+                        This process can take up to 50 seconds.
+                    </p>
                 </div>
             </div>
         </section>
@@ -99,8 +102,9 @@ export default function Home() {
 
     useEffect(() => {
         const fetchAllDataWithRetry = async () => {
-            const maxRetries = 5;
-            const retryDelay = 5000; // 5 seconds between retries
+            // backend can take up to 50 seconds to start
+            const maxRetries = 6;
+            const retryDelay = 10000; // 10 seconds between retries
 
             let lastSuccessfulResponse = null;
 
