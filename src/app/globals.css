@@ -1,18 +1,23 @@
 /** @format */
 
 @import "tailwindcss";
+
 body {
     font-family: "Josefin Sans", sans-serif;
+    background-color: rgb(29, 35, 41);
 }
 
+/* Hamburger menu animations */
 @keyframes slide-in {
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(0);
     }
 }
+
 .animate-slide-in {
     animation: slide-in 0.2s ease;
 }
@@ -25,9 +30,27 @@ body {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(100%);
     }
+}
+
+/* Animations for loading data */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.6s ease-out;
 }
 
 @layer base {
