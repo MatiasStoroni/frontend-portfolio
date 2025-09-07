@@ -20,7 +20,7 @@ function DynamicSectionLoading({ retryCount }: { retryCount: number }) {
                     <div className="w-12 h-12 border-4 border-orange-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
                     <h3 className="text-white text-lg font-semibold mb-2">Loading Content</h3>
                     <p className="text-slate-400 animate-pulse">
-                        Starting service... (Retries: {retryCount}/5)
+                        Starting service... (Retries: {retryCount}/6)
                     </p>
                     <p className="text-slate-400 animate-pulse">
                         This process can take up to 50 seconds.
