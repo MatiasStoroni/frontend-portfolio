@@ -1,4 +1,5 @@
-const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL!
+// const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL!
+const BASE_URL = "https://backend-portfolio-8j3p.onrender.com"
 
 async function getUsers() {
     try {
