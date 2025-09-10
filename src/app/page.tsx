@@ -12,12 +12,17 @@ import Projects from "./components/Projects";
 import { getWholePageData } from "./api/getPageData";
 import DynamicSectionLoading from "./components/LoadingState/DynamicSectionLoading";
 import ServiceFailedError from "./components/ErrorHandling/ServiceFailedError";
+import { User } from "./types/User";
+import { EducationType } from "./types/Education";
+import { ExperienceType } from "./types/Experience";
+import { ProjectType } from "./types/Project";
+import EmptyDataError from "./components/ErrorHandling/EmptyDataError";
 
 interface PageData {
-    users: any;
-    educations: any;
-    experiences: any;
-    projects: any;
+    users: User[];
+    educations: EducationType[];
+    experiences: ExperienceType[];
+    projects: ProjectType[];
 }
 
 export default function Home() {
@@ -64,6 +69,9 @@ export default function Home() {
             return <DynamicSectionLoading retryCount={retryCount} />;
         }
 
+        if (pageData?.users[0] == undefined) {
+            return <EmptyDataError />;
+        }
         switch (errorType) {
             case 'service-failed':
                 return <ServiceFailedError />;
@@ -83,6 +91,8 @@ export default function Home() {
                 return <ServiceFailedError />;
         }
     };
+
+
 
     return (
         <main>
