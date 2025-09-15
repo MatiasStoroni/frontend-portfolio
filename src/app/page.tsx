@@ -14,7 +14,6 @@ import { EducationType } from "./types/Education";
 import { ExperienceType } from "./types/Experience";
 import { ProjectType } from "./types/Project";
 import toast, { Toaster } from "react-hot-toast";
-import { callWithTimeout } from "./utils/callWithTimeout";
 
 interface PageData {
     users: User[];
