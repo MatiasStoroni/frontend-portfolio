@@ -9,7 +9,7 @@ export default function ServiceFailedError() {
                         </svg>
                     </div>
                     <h3 className="text-white text-xl font-semibold mb-2">Service Unavailable</h3>
-                    <p className="text-slate-400 mb-4">Service failed to start after 6 attempts</p>
+                    <p className="text-slate-400 mb-4">Sorry, couldn’t connect to the server. Please try again in a few minutes.</p>
                     <button
                         onClick={() => window.location.reload()}
                         className="px-4 py-2 bg-orange-700 hover:bg-orange-800 text-white rounded-lg transition-colors"

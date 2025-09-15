@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { ProjectType } from "../types/Project";
+import { ProjectType } from "../../types/Project";
 
 export default function Projects({ projects }: { projects: ProjectType[] }) {
     return (

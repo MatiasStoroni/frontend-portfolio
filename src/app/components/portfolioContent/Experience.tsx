@@ -1,6 +1,6 @@
 /** @format */
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
-import { ExperienceType } from "../types/Experience";
+import { ExperienceType } from "../../types/Experience";
 
 export default function Experience({ experiences }: { experiences: ExperienceType[] }) {
     return (

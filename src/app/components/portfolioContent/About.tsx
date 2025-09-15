@@ -1,6 +1,6 @@
 /** @format */
 import Image from "next/image";
-import { User } from "../types/User";
+import { User } from "../../types/User";
 
 export default function About({ user }: {user: User}) {
     return (

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { PiCertificateLight } from "react-icons/pi";
-import { EducationType } from "../types/Education";
+import { EducationType } from "../../types/Education";
 
 export default function Education({ educations }: { educations: EducationType[] }) {
     return (
