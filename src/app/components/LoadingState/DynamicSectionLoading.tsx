@@ -9,7 +9,7 @@ export default function DynamicSectionLoading() {
                         Starting service...
                     </p>
                     <p className="text-slate-400 animate-pulse">
-                        This may take up to a minute. Thank you for your patience.
+                        This may take up to 2 minutes. Thank you for your patience.
                     </p>
                 </div>
             </div>
