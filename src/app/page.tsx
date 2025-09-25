@@ -6,7 +6,6 @@ import About from "./components/portfolioContent/About";
 import Education from "./components/portfolioContent/Education";
 import Experience from "./components/portfolioContent/Experience";
 import Projects from "./components/portfolioContent/Projects";
-import { getWholePageData } from "./api/getPageData";
 import DynamicSectionLoading from "./components/LoadingState/DynamicSectionLoading";
 import ServiceFailedError from "./components/ErrorHandling/ServiceFailedError";
 import { User } from "./types/User";
