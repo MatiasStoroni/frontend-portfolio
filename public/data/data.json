@@ -1,0 +1,146 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Matias Storoni",
+            "degree": "Information Systems Engineer – Junior Full Stack Developer",
+            "description": "My name is Matias, I am an Information Systems Engineer with a strong background in analysis, design, and development of web applications, complemented by knowledge in network administration, cybersecurity, and software projects management.\nI am passionate about applying technology in practical ways to solve real-world problems, and I am committed to continuous learning—constantly researching and training in new tools to stay up-to-date in a rapidly evolving environment."
+        }
+    ],
+    "experiences": [
+        {
+            "id": 1,
+            "title": "Conversational Agents Developer",
+            "company": "Prestobots S.A.",
+            "period": "September 2024 - August 2025",
+            "responsibilities": [
+                "Worked in a fast-paced startup environment, developing and deploying conversational AI solutions for the healthcare industry.",
+                "Developed and maintained a Python-based pipeline for failure analysis, reporting, and root cause detection, improving chatbot reliability.",
+                "Built and deployed multi-agent chatbots with automated workflow orchestration (n8n), ensuring dependable error handling and seamless operation.",
+                "Integrated chatbots with clients’ systems via APIs with Node.js, enabling real-time data exchange and backend system optimization.",
+                "Automated appointment scheduling and prescription reading, reducing patient request processing time by 80%.",
+                "Troubleshot and debugged failures, implementing timely fixes and monitoring improvements."
+            ],
+            "tools": [
+                "Dialogflow CX",
+                "Gemini",
+                "n8n",
+                "Node.js",
+                "BigQuery",
+                "Python",
+                "Git"
+            ]
+        }
+    ],
+    "educations": [
+        {
+            "id": 1,
+            "title": "Cybersecurity Essentials - Cisco Networking Academy",
+            "yearCompleted": 2025,
+            "description": "Intermediate course on cybersecurity principles, including cryptography, network security, firewalls, VPNs, and risk mitigation.",
+            "resource": {
+                "id": 1,
+                "type": "certificate",
+                "url": "https://www.credly.com/badges/92ddc5d4-40ec-4c9d-b078-108f5948202a/public_url"
+            },
+            "project": null
+        },
+        {
+            "id": 2,
+            "title": "Bachelor's Degree in Information Systems",
+            "yearCompleted": 2025,
+            "description": "Focused on software development, project management, networks, and cybersecurity.",
+            "resource": {
+                "id": 2,
+                "type": "repository",
+                "url": "https://github.com/MatiasStoroni/Benkynote"
+            },
+            "project": {
+                "id": 1,
+                "title": "🎓 Final Thesis: Academic Assistance Platform",
+                "summary": "Full-stack academic support platform with secure login, class transcription, and AI-based exam simulation.",
+                "techStack": [
+                    "Java",
+                    "Next.js",
+                    "MySQL",
+                    "Docker",
+                    "Auth0",
+                    "Python",
+                    "AI"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "title": "Introduction to Cybersecurity - Cisco Networking Academy",
+            "yearCompleted": 2025,
+            "description": "Foundational cybersecurity course covering threats, cryptography, and data protection.",
+            "resource": {
+                "id": 3,
+                "type": "certificate",
+                "url": "https://www.credly.com/badges/22c6a16a-7dba-41e4-bb88-77d62ac10f13/public_url"
+            },
+            "project": null
+        },
+        {
+            "id": 4,
+            "title": "Full Stack Developer Course – #YoProgramo",
+            "yearCompleted": 2022,
+            "description": "Government-backed program covering Angular, Spring Boot, MySQL, and deployment tools.",
+            "resource": {
+                "id": 4,
+                "type": "certificate",
+                "url": "https://drive.google.com/file/d/182tF3LZYyrkjjUZvbhaWxmtb815YN7KU/view?usp=sharing"
+            },
+            "project": null
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "BenkyNote – Academic Platform",
+            "description": "AI-powered platform to help students plan and automate tasks like transcription and exam simulation.",
+            "techStack": [
+                "Next.js",
+                "Java",
+                "MySQL",
+                "Auth0",
+                "Docker",
+                "Python",
+                "Git"
+            ],
+            "imageUrl": "https://res.cloudinary.com/do83eqyxu/image/upload/v1756307694/benkynote_llkhto.png",
+            "repositoryUrl": "https://github.com/MatiasStoroni/Benkynote",
+            "liveDemoUrl": null
+        },
+        {
+            "id": 2,
+            "title": "Frontend Portfolio",
+            "description": "A modern personal portfolio website built with Next.js and Tailwind CSS, featuring a responsive design and seamless section-based navigation. The site showcases key projects and experience using a clean UI and reusable components, deployed live on Vercel to demonstrate technical proficiency.",
+            "techStack": [
+                "Next.js",
+                "Tailwind CSS",
+                "React",
+                "Git",
+                "Vercel"
+            ],
+            "imageUrl": "https://res.cloudinary.com/do83eqyxu/image/upload/v1756404133/Frontend_cover_image_xjc6jy.png",
+            "repositoryUrl": "https://github.com/MatiasStoroni/frontend-portfolio-next",
+            "liveDemoUrl": null
+        },
+        {
+            "id": 3,
+            "title": "Backend Portfolio API",
+            "description": "A robust backend API built with Java to manage website content, using PostgreSQL for data persistence. The entire application is containerized with Docker to ensure consistent and reliable deployment.",
+            "techStack": [
+                "Java",
+                "PostgreSQL",
+                "Docker",
+                "API"
+            ],
+            "imageUrl": "https://res.cloudinary.com/do83eqyxu/image/upload/v1756404133/Backend_cover_image_caguy7.png",
+            "repositoryUrl": "https://github.com/MatiasStoroni/backend-portfolio",
+            "liveDemoUrl": null
+        }
+    ]
+}

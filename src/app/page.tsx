@@ -15,6 +15,7 @@ import { ExperienceType } from "./types/Experience";
 import { ProjectType } from "./types/Project";
 import toast, { Toaster } from "react-hot-toast";
 
+
 interface PageData {
     users: User[];
     educations: EducationType[];
@@ -31,15 +32,15 @@ export default function Home() {
         setIsLoading(true);
 
         try {
-            const res = await getWholePageData();
-            setPageData(res);
+            const res = await fetch("/data/data.json");
 
-            // If we got valid data -> return
-            if (res) {
-                setIsLoading(false);
-                toast.success("Data fetched succesfully!")
-                return;
+            if (!res.ok) {
+                throw new Error("Failed to fetch local JSON");
             }
+
+            const json: PageData = await res.json();
+            setPageData(json);
+            toast.success("Data fetched successfully!");
 
         } catch (error) {
             console.log(error);
